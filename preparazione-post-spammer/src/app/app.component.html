@@ -1,0 +1,20 @@
+<div class="container">
+  <form class="jumbotron">
+  <div class="form-group">
+  <label for="useless">cose inutile</label>
+  <input name="useless" #useless class="form-control">
+  <br>
+  <label for="spam"> spam</label>
+  <input name="spam" #spam class="form-control">
+  </div>
+  <br>
+  <button (click) = "addSpam(useless,spam)"  class="btn btn-primary">submit spam</button> 
+  
+  </form>
+  <ul>
+      <li *ngFor = "let a of articles">
+          {{a}}
+      </li>
+    
+  </ul>
+  </div>
